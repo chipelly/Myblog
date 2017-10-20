@@ -1,9 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>the blog of leanring</title>
-  </head>
-  <body>
-    this is the context about something i want to say.
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>the demo of Myblog</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="https://typo.sofi.sh/typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{
+      padding:16px;
+    }
+    img{
+      max-width:100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+# 我的第一篇博客
+
+**Chipelly**
+
+> 做能做的事情，趁还有时间
+
+正文+内容+感想。
+
+
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508530767890&di=a7fc448efb39650e473e9622681b6c7f&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D4c3b2306ba51f819e5280b09b2dd2098%2F8718367adab44aed5b5a1bc9b91c8701a18bfb83.jpg">
+
+  </div>
+  
+  <script>
+    var content=document.getElementById('content')
+    var markdown= content.innerHTML
+    var html=marked(markdown)
+    content.innerHTML= html
+    
+   // var markdown=`
+    //var html= marked(markdown);
+    //document.getElementById('context').innerHTML= html;
+
+  //  document.getElementById('content').innerHTML =
+  //   marked('# Marked in browser\n\nRendered by **marked**.');
+    // meta:vp+tab
+  </script>
+</body>
 </html>
